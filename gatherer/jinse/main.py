@@ -18,7 +18,7 @@ def sync_article_content():
     task_start_time = time.time()
     last_reject_time = time.time()
     for _id in _lst:
-        # url = article.text_url(_id)
+        # url = article.object_url(_id)
         # request_cnt += 1
         # http_rsp = requests.get(url).content.decode()
         try:

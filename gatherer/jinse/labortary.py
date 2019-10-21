@@ -12,7 +12,7 @@ def get_cut_text(key_id):
 
 if __name__ == "__main__":
     id_list = keys()
-    # for key in id_list:
+    # for key in keys:
     #     print(get_content(key))
     #     print(get_cut_text(key))
     #     break
