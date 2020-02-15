@@ -1,4 +1,6 @@
 #coding: utf-8
+import sys, os
+sys.path.append(os.path.abspath('.'))
 import requests
 import json
 from article import *
@@ -10,7 +12,7 @@ def ltp_analyze(text):
 
 if __name__ == "__main__":
   print('\n\n')
-  contents_id = content_id_list()
+  contents_id = keys_fetched()
   print("from=%d, to=%d"%(contents_id[0], contents_id[-1]))
   while True:
     _id = int(input("try an id (from %d to %d):"%(contents_id[0], contents_id[-1])))
